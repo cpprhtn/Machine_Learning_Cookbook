@@ -68,8 +68,3 @@ kb.fit_transform(age)
 
 kb.bin_edges_
 #array([array([ 6.  , 20.75, 35.5 , 50.25, 65.  ])], dtype=object)
-
-
-
-
-
