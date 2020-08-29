@@ -46,3 +46,14 @@ clf.fit(features_train, target_train)
 
 #점수
 clf.score(features_test, target_test)
+
+
+clf = DummyRegressor(strategy='quantile', quantile=1.0)
+clf.fit(features_train, target_train)
+
+#훈련 세트 타깃의 최대값으로 예측
+clf.predict(features_test)
+
+import numpy as np
+#훈련 세트의 타깃에서 최댓값
+np.max(target_train)
